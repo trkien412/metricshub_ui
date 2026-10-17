@@ -1,0 +1,3 @@
+# Giải trình lựa chọn layout
+
+MetricsHub dùng Flexbox cho Navbar vì đây là hàng phần tử theo một chiều. Flexbox tự phân phối khoảng trống, căn giữa và cho phép menu xuống dòng khi màn hình hẹp. Dashboard dùng CSS Grid vì các widget cần bố trí đồng thời theo hàng và cột; thuộc tính `grid-column` và `grid-row` giúp widget lớn chiếm nhiều ô mà không cần nhiều div lồng nhau. Pricing dùng Bootstrap với `row` và `col-12 col-md-4`: trên mobile mỗi gói chiếm toàn bộ hàng, từ màn hình `md` trở lên có ba cột bằng nhau. Cách chia này dễ đọc, dễ sửa và tận dụng sẵn responsive của Bootstrap. Grid phù hợp cho layout tổng thể hai chiều, còn Flexbox phù hợp căn chỉnh component theo một chiều; hai kỹ thuật có thể kết hợp trong cùng giao diện.
